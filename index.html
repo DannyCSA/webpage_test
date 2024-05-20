@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Monitor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Temperature Monitor</h1>
+        <h2>Temperature: <span id="temperature">--</span> &#8451;</h2>
+        <button onclick="sendCommand('turn_on')">Turn On</button>
+        <button onclick="sendCommand('turn_off')">Turn Off</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
